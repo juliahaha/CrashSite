@@ -1,0 +1,42 @@
+Crash Site is a data input tool which allows road users to catalogue crashes that may not have been reported in traditional police report systems. 
+
+In this version, data is entered on the command line and exports to a central CSV file for future analysis.
+
+---
+
+date_crash = Date the crash occurred.
+time_crash = Time (approximate) that the crash occurred. Because this program assumes that the user will be inputting data 
+city_crash = City in which the crash occurred.
+
+veh1_crash = Value associated with user input related to the type of vehicle they were operating. Users are asked: "What kind of vehicle were you driving, or were you walking?" 
+Responses are coded into numbers:
+	1 - Bike/bicycle
+	2 - Walking
+	3 - Car
+	4 - Motorcycle
+	5 - Unicycle
+	6 - Skateboard
+Other responses are marked with the phrase "unusual input" as well as the entry text.
+
+
+veh2_crash = Users first answer "Was the crash with another vehicle or an object?"; if vehicle, "What kind of vehicle?"
+Responses are coded into numbers:
+	1 - Bike/bicycle
+	2 - Walking
+	3 - Car
+	4 - Motorcycle
+	5 - Unicycle
+	6 - Skateboard
+Other responses are marked with the phrase "unusual input" as well as the entry text. 
+
+crash_obj = If user answers "object", input text is listed with "Object:"
+
+date_crash = Date the crash occurred.
+time_crash = Time (approximate) that the crash occurred. Because this program assumes that the user will be inputting data, it is not connected to the time 
+city_crash = City in which the crash occurred.
+
+
+weather = Asks if it was raining or snowing at the time of crash. 1 = Raining, 2 = Snowing, 0 = No
+injury = Whether or not there was an injury. Boolean.
+pol_rep = Whether or not the user filed a formal police report. Boolean.
+
