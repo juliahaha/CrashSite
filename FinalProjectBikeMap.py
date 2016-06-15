@@ -1,23 +1,31 @@
-#CrashCLE Goals:
+#CrashSite Goals:
 #Users will be able to report crashes and collisions and view the locations of other collisions
 #Data will be able for download as a CSV file
 #Map will auto-update, ideally on a set schedule, and show crashes that occurred during a set time period.
 #Users will be able to report location through a map interface
 
-import ReportClass *
+from ReportClass import  *
+from csv import *
+from sys import *
 
 #Welcome/Intro
 
 
-#Disclaimer
-print ("Please note: This database is for informational use only. CrashSite does not file police reports on behalf of users.")
-print ("Enter information about the crash below:")
-
-#Collect data
+def add_to_file():
+	with open('BikeCrashDatabase.csv', 'wb', newline="") as csvfile:
 
 
-#Assign user entries a unique ID number
+if __name__ == '__main__':
+	#Disclaimer
+	print "Please note: This database is for informational use only. CrashSite does not file police reports on behalf of users."
+	print "Enter information about the crash below:"
+	ReportClass.types_of_vehicles()
+	ReportClass.date_time_place()
+	ReportClass.other_conditions()
 
-#Associate date and time of entry with entry
+	#Collect data
 
-#Export to CSV
+	#Associate date and time of entry with entry
+
+	#Export to CSV
+add_to_file()
